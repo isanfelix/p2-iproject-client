@@ -12,12 +12,12 @@
               </h3>
               <div class="text-gray-300 text-md">17 November 2021</div>
               <h3 class="text-center text-white text-3xl mt-2 font-bold">
-                    49 &deg;
+                    {{this.$store.state.weatherToday.temp}} &deg;
               </h3>
               <div class="flex mb-4">
                 <div class="w-1/3 h-12"></div>
-                <div class="w-2/3  h-12 pt-5 pr-4 uppercase text-white text-md font-bold ">Party Cloudy</div>
-                <div class="w-1/3 h-12 pl-5"><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-cloud-weather-justicon-lineal-color-justicon.png"/></div>
+                <div class="w-2/3  h-12 pt-5 pr-4 uppercase text-white text-md font-bold ">{{this.$store.state.weatherToday.weather}}</div>
+                <div class="w-1/3 h-12 pl-5"><img src="http://openweathermap.org/img/wn/10d@2x.png"/></div>
               </div>
               
             </div>
